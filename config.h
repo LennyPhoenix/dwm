@@ -16,10 +16,17 @@ static const char col_bgdarker[]    = "#191A21";
 static const char col_blue[]        = "#6272A4";
 static const char col_pink[]        = "#FF79C6";
 static const char col_purple[]      = "#BD93F9";
+static const unsigned int baralpha    = 0xd0;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg             bg           border    */
 	[SchemeNorm] = { col_fg,        col_bglight, col_blue   },
 	[SchemeSel]  = { col_bgdarker,  col_pink,    col_purple },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
