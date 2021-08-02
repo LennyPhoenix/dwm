@@ -1,0 +1,6 @@
+# ccls
+.ccls-cache/
+
+# bin
+dwm
+*.o
